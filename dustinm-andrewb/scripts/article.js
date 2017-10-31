@@ -67,5 +67,5 @@ Article.fetchAll = () => {
   }
 
   //TODONE: What method do we call to render the index page?
-  articleView.initIndexPage();
+  articleView.initIndexPage(); //eslint-disable-line
 }

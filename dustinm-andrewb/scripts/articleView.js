@@ -87,7 +87,7 @@ articleView.create = () => {
   let article;
   $('#articles').empty();
 
-  article = new Article({
+  article = new Article({ //eslint-disable-line
     title: $('#article-title').val(),
     author: $('#article-author').val(),
     authorUrl: $('#article-author-url').val(),
@@ -107,7 +107,7 @@ articleView.create = () => {
 
 
 articleView.initIndexPage = () => {
-  Article.all.forEach(article => {
+  Article.all.forEach(article => { //eslint-disable-line
     $('#articles').append(article.toHtml())
   });
 
